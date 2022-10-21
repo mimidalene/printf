@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
-  * ev_print_f - returns the count of identifiers.
-  *@s: argument identifier
-  *@index: index of argument identifier
-  *Return: count of identifiers
-  *
-  */
-
-int ev_print_f(const char *s, int index)
+ * ev_print_func - returns the amount of identifiers.
+ * @s: argument indentifier
+ * @index: index of argument identifier.
+ * Return: amount of identifiers.
+ */
+int ev_print_func(const char *s, int index)
 {
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str}, {"i", print_int},
@@ -29,7 +27,7 @@ int ev_print_f(const char *s, int index)
 		{"h", print_prg}, {" +i", prinpint}, {" +d", prinpint},
 		{"+ i", prinpint}, {"+ d", prinpint}, {" %", print_prg},
 		{NULL, NULL},
-		};
+	};
 	int i = 0, j = 0, first_index;
 
 	first_index = index;
